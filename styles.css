@@ -226,25 +226,25 @@ mark.hl{background:#fff1b8;color:inherit;border-radius:2px;padding:0 1px;}
   .filter-panel.fp-hidden{display:none;}
 }
 
-/* Compact, hideable sidebar (desktop) - 156px wide (about 0.8in narrower than 232px) */
+/* Compact, hideable sidebar (desktop) - 144px wide, sized to the logo, logo centered */
 .sb-toggle{display:none;align-items:center;justify-content:center;width:32px;height:32px;margin-right:4px;flex-shrink:0;border:1px solid var(--border);border-radius:8px;background:var(--bg2);color:var(--text2);cursor:pointer;}
 .sb-toggle:hover{background:var(--bg3);color:var(--text1);}
 .sb-toggle svg{width:15px;height:15px;}
 @media(min-width:769px){
   .sb-toggle{display:inline-flex;}
-  .sidebar{width:156px;transition:margin-left .2s ease;}
-  .app.sb-hidden .sidebar{margin-left:-156px;}
-  .sidebar-logo{padding:16px 12px 8px;}
-  #sidebar-logo-img{max-width:124px!important;}
-  .nav-body{padding:4px 8px;}
+  .sidebar{width:144px;transition:margin-left .2s ease;}
+  .app.sb-hidden .sidebar{margin-left:-144px;}
+  .sidebar-logo{padding:16px 10px 8px;justify-content:center;}
+  #sidebar-logo-img{max-width:120px!important;margin:0 auto;}
+  .nav-body{padding:4px 6px;}
   .nav-label{font-size:10px;padding:12px 8px 5px;}
-  .nav-item{font-size:12.5px;gap:8px;padding:7px 8px;}
+  .nav-item{font-size:12px;gap:7px;padding:7px 8px;}
   .nav-item svg{width:14px;height:14px;}
   .nav-badge{display:none;}  /* result count is already shown on the Search page */
   .sidebar-footer{padding:10px 8px;}
   .user-row{gap:7px;padding:7px 8px;}
   .avatar{width:26px;height:26px;font-size:9.5px;}
   .user-name{font-size:11.5px;}
-  .user-name,.user-role{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:88px;}
+  .user-name,.user-role{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:80px;}
   .logout-btn{padding:7px 8px;font-size:12px;}
 }
